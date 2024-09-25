@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent-Child Menu with Hover</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="menu-item">Home
+            <ul class="submenu">
+                <li class="submenu-item">Home 1</li>
+                <li class="submenu-item">Home 2</li>
+            </ul>
+        </li>
+            <li class="menu-item">About
+                <ul class="submenu">
+                    <li class="submenu-item">Our Team</li>
+                    <li class="submenu-item">Our Story</li>
+                </ul>
+            </li>
+            <li class="menu-item">Services
+                <ul class="submenu">
+                    <li class="submenu-item">Web Design</li>
+                    <li class="submenu-item">SEO</li>
+                    <li class="submenu-item">Marketing</li>
+                </ul>
+            </li>
+            <li class="menu-item">Contact
+                <ul class="submenu">
+                    <li class="submenu-item">Contact 1</li>
+                    <li class="submenu-item">Contact 2</li>
+                </ul>
+
+            </li>
+        </ul>
+    </nav>
+    <script src="script1.js"></script>
+</body>
+</html>

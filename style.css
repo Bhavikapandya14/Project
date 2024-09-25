@@ -1,0 +1,588 @@
+*{
+    font-family: poppins;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+
+}
+h1{
+    font-style:italic;
+    color:#8f0a1a;
+    font-size:15px;
+    margin-bottom:10px;
+    text-align:center;
+    background-color:burlywood;
+
+}
+h2{
+    display:flex;
+    align-items: center;
+    font-style:italic;
+    color:#3b1bba;
+    font-size:50px;
+    margin-bottom:20px;
+    text-align:center;
+    background-color:green;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Logo{
+    width:60px;
+    height: 60px;
+    margin-right: 5px;
+}
+.price{
+    color:rgb(97, 244, 87)
+}
+ul{
+    list-style-type: none;
+    
+   
+   
+}
+ul li{
+    display: inline-block;
+    padding: 5px;
+}
+ul li:hover{
+    background-color:greenyellow;
+    color:white;
+   
+
+}
+
+
+.dropdown{
+    display: block;
+    position: absolute;
+    margin-left: -0.20cm;
+    margin-top: 0.10cm;
+
+}
+.dropdown ul{
+    margin:0;
+    padding:0;
+
+}
+.dropdown ul li{
+    display: block;
+
+}
+
+.dropdown2{
+    position: absolute;
+    margin-left: 2.5cm;
+    margin-top: -0.75cm;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    margin:0px;
+    padding:0px;
+    font-family: poppins;
+}
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:35px;
+    max-width:1070px;
+    width :100%;
+    margin: auto;
+}
+.menu{
+    display:flex;
+}
+.menu li a{
+    padding: 3px 10px;
+    margin :0px 15px;
+    color:#3b3b3b;
+    font-weight:500;
+    letter-spacing: 0.5px;
+
+}
+.logo{
+    font-size:1.4rem;
+    font-weight:600;
+    letter-spacing: 1px;
+    color:#840808;
+}
+.logo span{
+    color:#40aa54;
+}
+form {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    float: right;
+    margin: 20px;
+    position:absolute;
+    right: 100px;
+    top: 5%;
+    transform: translateY(-10%);
+  }
+  
+  input[type="search"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .cart-icon {
+    float: right;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    float: right;
+    margin: 20px;
+    position:absolute;
+    right: 20px;
+    top: 5%;
+    transform: translateY(-10%);
+    
+  }
+  button[type="add-to-cart"] {
+    display: flex;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7040ab;
+    color: white;
+    cursor: pointer;
+    float: right;
+    right: 20px;
+    top: 5%;
+    transform: translateY(-10%);
+    position:absolute;
+    margin-left: 10px;
+    align-items: center;
+  }
+  
+  button[type="add-to-cart"]:hover {
+    background-color: #52398d;
+  }
+  background-image-container {
+    background-image: url("C:\ReactJs\Project\240_F_232160763_FuTBWDd981tvYEJFXpFZtolm8l4ct0Nz.jpg"); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Don't repeat the image */
+    height: 50px; /* Set the height of the container */
+    width: 10%; /* Set the width of the container */
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+
+  /* Basic reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    position: relative;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Submenu styles */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 3px;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.submenu-item {
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.submenu-item:hover {
+    background-color: #666;
+}
+
+/* Show submenu on parent hover */
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("bgimg.jpg");
+   
+}  
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu > li > a:hover {
+    background-color: #575757;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li > a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu li > a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.dropdown-submenu:hover .submenu {
+    display: block;
+    left: 100%;
+    top: 0;
+}
+.menu-item-submenu-item:hover .submenu {
+    display: block;
+    left: 100%;
+    top: 0;
+}
+
+
+/* style.css */
+@import url(
+'https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    color: #fff;
+}
+
+i {
+    transition: transform 0.5s ease;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+.home,
+.html,
+.angular,
+.js,
+.about-us,
+.contact {
+    padding: 1rem 0;
+}
+
+.navbar-links,
+.navbar-search {
+    display: flex;
+    gap: 2rem;
+}
+
+.html,
+.js,
+.html-js-link {
+    position: relative;
+}
+
+.html:hover .html-chevron,
+.js:hover .js-chevron {
+    transform: rotate(-180deg);
+}
+
+.html-js-link:hover i {
+    transform: rotate(-90deg);
+}
+
+.html-sub-menu,
+.js-sub-menu,
+.html-js-sub-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.45rem;
+    left: -5%;
+    background-color: hsl(120, 100%, 20%);
+    width: 110%;
+}
+
+.html-sub-menu li,
+.js-sub-menu li,
+.html-js-sub-menu li {
+    padding: 0.75rem;
+}
+
+.html:hover .html-sub-menu,
+.js:hover .js-sub-menu {
+    display: flex;
+}
+
+.html-sub-menu:hover .html-sub-menu {
+    display: flex;
+}
+
+.html-js-sub-menu {
+    top: 1rem;
+    left: 6rem;
+}
+
+.html-sub-menu li:nth-child(1):hover .html-js-sub-menu {
+    display: flex;
+}
+.html-sub-menu li:nth-child(2):hover .html-js-sub-menu {
+    display: flex;
+}
+.html-sub-menu li:nth-child(3):hover .html-js-sub-menu {
+    display: flex;
+}
+.html-sub-menu li:nth-child(4):hover .html-js-sub-menu {
+    display: flex;
+}
+.html-sub-menu li:nth-child(5):hover .html-js-sub-menu {
+    display: flex;
+}
+
+.html-sub-menu:hover i {
+    transform: rotate(-90deg);
+}
+body {
+    font-family: Arial, sans-serif;
+}
+footer {
+    background-color: hsl(120, 100%, 20%);;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-logo img {
+    height: 80px; /* Adjust height as needed */
+}
+.footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+::-webkit-scrollbar {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    height: 150vh; /* Making the body taller to create scroll */
+    background-color: #f4f4f4;
+}
+*body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+h3 {
+    
+    text-align:center;
+    
+}
+table{
+    text-align: center;
+    align-items: center;
+
+}
+.td{
+    text-align: center;
+    align-items: center;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.about-content {
+    text-align: center;
+}
+.about-content {
+
+
+font-size: medium;
+}
+
+.about-content {
+    padding: 20px;
+}
+
+.about-content h2 {
+    margin-top: 0;
+}

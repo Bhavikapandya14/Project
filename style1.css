@@ -1,0 +1,130 @@
+/* Basic reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    position: relative;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Submenu styles */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 3px;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.submenu-item {
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.submenu-item:hover {
+    background-color: #666;
+}
+
+/* Show submenu on parent hover */
+.menu-item:hover .submenu {
+    display: block;
+}
+.bg-img {
+    /* The image used */
+    background-image: url("C:\ReactJs\Project\bgimg.jpg");
+  
+}  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu > li > a:hover {
+    background-color: #575757;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li > a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu li > a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.menu-item-submenu-item:hover .submenu {
+    display: block;
+    left: 100%;
+    top: 0;
+}
